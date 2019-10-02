@@ -23,7 +23,8 @@ ON s.section_id = r.section_id
 INNER JOIN Person p 
 ON r.person_id = p.person_id 
 INNER JOIN Person tp 
-ON s.teacher_person_id = tp.person_id;
+ON s.teacher_person_id = tp.person_id
+ORDER BY c.code, s.sectionNumber, p.last_name, p.first_name;
 
 
 
