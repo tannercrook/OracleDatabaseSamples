@@ -13,7 +13,7 @@ SELECT
 , p.first_name 
 , c.code 
 , c.name 
-, s.sectionNumber 
+, s.section_number 
 , tp.last_name||', '||tp.first_name AS teacher 
 FROM Course c 
 INNER JOIN Section s 
@@ -24,7 +24,7 @@ INNER JOIN Person p
 ON r.person_id = p.person_id 
 INNER JOIN Person tp 
 ON s.teacher_person_id = tp.person_id
-ORDER BY c.code, s.sectionNumber, p.last_name, p.first_name;
+ORDER BY c.code, s.section_number, p.last_name, p.first_name;
 
 
 
