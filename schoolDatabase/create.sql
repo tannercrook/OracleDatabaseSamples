@@ -34,7 +34,7 @@ CREATE SEQUENCE course_s1;
 CREATE TABLE Section
 ( section_id            NUMBER
 , course_id             NUMBER  CONSTRAINT nn_section_1 NOT NULL
-, sectionNumber         NUMBER  CONSTRAINT nn_section_2 NOT NULL
+, section_number         NUMBER  CONSTRAINT nn_section_2 NOT NULL
 , teacher_person_id     NUMBER  
 , type_code             VARCHAR2(6) CONSTRAINT nn_section_3 NOT NULL 
 , available_seats       NUMBER  CONSTRAINT nn_section_4 NOT NULL 
